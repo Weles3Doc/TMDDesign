@@ -1,0 +1,133 @@
+:root {
+    --wls-base-dark: rgb(10, 69,79);
+    --wls-base-light: rgb(7, 117, 135);
+    --wls-gray-dark: gray;
+    --wls-gray-light: lightgray;
+    --wls-logo-light: rgb(218, 74, 0);
+    --wls-logo-dark: rgb(186, 0, 0);
+    --wls-hint: rgb(240,240,240);
+    --wls-border-radius: .5em;
+    --wls-padding: .25em;
+    --wls-box-shadow: 0 0 .2em .2em;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+::placeholder {
+    color: var(--wls-gray-light)!important
+}
+::selection {
+    color: white;
+    background-color: var(--wls-base-dark);
+}
+
+:link {
+    color: var(--wls-base-dark);
+    text-decoration: underline;
+}
+
+:visited {
+    color: var(--wls-base-dark);
+}
+
+:link:hover {
+    color: var(--wls-base-light);
+}
+
+.wls-icon {
+    --fa-primary-color: var(--wls-logo-base-dark);
+    --fa-secondary-color: var(--wls-logo-base-dark);
+}
+
+.lay-full-height {
+    height: 100vh;
+}
+
+.tmd-logo {
+    height: 1.5em;
+}
+
+.tmd-logo-lg {
+    height: 4em;
+}
+
+
+.tmd-shadowed {
+    box-shadow: var(--wls-box-shadow) var(--wls-hint);
+}
+
+.tmd-area {
+    background-color: var(--wls-hint);
+    border: 2px solid var(--wls-gray-light);
+    border-radius: .3em;
+    box-shadow: 2px 2px 6px 1px var(--wls-gray-light);
+}
+.tmd-area1 {
+    background-color: var(--wls-base-dark);
+    border: 2px solid var(--wls-gray-light);
+    border-radius: .3em;
+    box-shadow: 2px 2px 6px 1px var(--wls-gray-light);
+}
+.tmd-separated {
+    border-bottom: 1px solid var(--wls-base-dark);
+}
+.tmd-separated1 {
+    border-bottom: 1px solid var(--wls-hint);
+}
+
+.tmd-icon-fixed {
+    width: 1em;
+    display: inline-block;
+}
+
+.tmd-selected {
+    background-color: var(--wls-light-light);
+    border-radius: .1em;
+}
+
+.tmd-active {
+    border: 1px solid transparent;
+    border-radius: .5em;
+}
+
+.tmd-active:not(.tmd-selected):hover {
+    border-color: var(--wls-gray-light);
+    cursor: pointer;
+}
+
+.tmd-emp {
+    font-size: 1.2em;
+    color: var(--wls-base-dark);
+}
+.tmd-emp1 {
+    font-size: 1.2em;
+    color: var(--wls-hint);
+}
+
+.tmd-green {
+    color: green;
+}
+
+.tmd-red {
+    color: red;
+}
+
+.tmd-background {
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(/img/tlo.jpg); 
+    background-position-x: right;
+    background-position-y: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    width: 100%;
+    height: 100%;
+    opacity : 0.4;
+    z-index: -1;    
+}
