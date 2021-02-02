@@ -131,3 +131,7 @@
     opacity : 0.4;
     z-index: -1;    
 }
+
+.tmd-width {
+    width: 340px;
+}
