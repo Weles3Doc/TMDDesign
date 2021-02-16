@@ -41,6 +41,10 @@
     --fa-secondary-color: var(--wls-logo-base-dark);
 }
 
+.top {
+    width: 460px; margin-left: auto; margin-right: auto; margin-top: 10px    
+}
+
 .lay-full-height {
     height: 100vh;
 }

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pl">
+
+<head app="mockup">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ToMojDom</title>
+    <link href="bootstrap.css" rel="stylesheet">
+    <link href="mockup.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7cdcd60fbd.js" crossorigin="anonymous"></script>
+    <script src="jquery.js"></script>
+    <script src="bootstrap.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load("current", { packages: ["corechart"] });
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Grupa obciążeń', 'Kwota'],
+                ['Media', 100.00],
+                ['Eksploatacja', 200.00],
+                ['Fundusz remontowy', 111.15]
+            ]);
+
+            var options = {
+                pieHole: 0.4,
+                backgroundColor: "transparent",
+                chartArea: {
+                    width: "100%",
+                    top: 20,
+                    height: 400
+                },
+                legend: {
+                    position: "bottom"
+                },
+                height:480,
+                pieSliceText: "value"
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+            chart.draw(data, options);
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="tmd-area p-2 top">
+        <div class="tmd-emp">
+            <i class="wls-icon tmd-icon-fixed mr-2 fad fa-coins"></i>
+            Obciążenie bieżące
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Miesiąc</td>
+                    <th class="text-right">Obciążenie</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2021-01</td>
+                    <td class="text-right font-weight-bold tmd-red">411,15 zł</td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="donutchart"></div>
+        <button class="btn btn-primary btn-block mt-2">Szczegółowy wydruk<i class="wls-icon tmd-icon-fixed ml-2 fad fa-print"></i></button>
+        <button class="btn btn-primary btn-block mt-2">Zapłać teraz on-line <i
+            class="wls-icon tmd-icon-fixed ml-2 fad fa-credit-card"></i></button>
+
+    </div>
+</body>
+
+</html>
