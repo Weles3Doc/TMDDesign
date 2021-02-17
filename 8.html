@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pl">
+
+<head app="mockup">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ToMojDom</title>
+    <link href="bootstrap.css" rel="stylesheet">
+    <link href="mockup.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7cdcd60fbd.js" crossorigin="anonymous"></script>
+    <script src="jquery.js"></script>
+    <script src="bootstrap.js"></script>
+</head>
+
+<body>
+    <div class="tmd-area p-2 top">
+        <div class="tmd-emp">
+            <i class="wls-icon tmd-icon-fixed mr-2 fad fa-calculator"></i>
+            Dane
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Lokal</th>
+                    <th class="text-right">Własność</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>M001</td>
+                    <td class="text-right">100%</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="accordion" id="dane">
+            <div class="card bg-transparent">
+                <div class="card-header" id="d-1-h">
+                    <button class="btn btn-block btn-link" data-toggle="collapse" data-target="#d-1">Powierzchnia
+                        użytkowa 78,15<i class="wls-icon tmd-icon-fixed ml-2 fad fa-angle-down"></i></button>
+                </div>
+                <div class="collapse show" id="d-1" data-parent="#dane">
+                    <div class="card-body p-0">
+                        <table class="table text-nowrap mb-0">
+                            <thead>
+                                <tr>
+                                    <th>Od dnia</th>
+                                    <th class="text-right">Wartość</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2020-12-07</td>
+                                    <td class="text-right"> 78,15 </th>
+                                </tr>
+                                <tr>
+                                    <td>2020-01-06</td>
+                                    <td class="text-right"> 80,00 </th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-transparent">
+                <div class="card-header" id="d-2-h">
+                    <button class="btn btn-block btn-link" data-toggle="collapse" data-target="#d-2">Liczba osób 3<i
+                            class="wls-icon tmd-icon-fixed ml-2 fad fa-angle-down"></i></button>
+                </div>
+                <div class="collapse" id="d-2" data-parent="#dane">
+                    <div class="card-body p-0">
+                        <table class="table text-nowrap mb-0">
+                            <thead>
+                                <tr>
+                                    <th>Od dnia</th>
+                                    <th class="text-right">Wartość</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2020-12-07</td>
+                                    <td class="text-right"> 3 </th>
+                                </tr>
+                                <tr>
+                                    <td>2020-01-06</td>
+                                    <td class="text-right"> 1 </th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
