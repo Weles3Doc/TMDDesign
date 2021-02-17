@@ -42,7 +42,7 @@
 }
 
 .top {
-    width: 460px; margin-left: auto; margin-right: auto; margin-top: 10px    
+    max-width: 420px; margin-left: auto; margin-right: auto; margin-top: 10px    
 }
 
 .lay-full-height {
@@ -67,13 +67,9 @@
     border: 2px solid var(--wls-gray-light);
     border-radius: .3em;
     box-shadow: 2px 2px 6px 1px var(--wls-gray-light);
+    overflow: auto;
 }
-.tmd-area1 {
-    background-color: var(--wls-base-dark);
-    border: 2px solid var(--wls-gray-light);
-    border-radius: .3em;
-    box-shadow: 2px 2px 6px 1px var(--wls-gray-light);
-}
+
 .tmd-separated {
     border-bottom: 1px solid var(--wls-base-dark);
 }
