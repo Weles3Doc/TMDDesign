@@ -101,6 +101,11 @@
     font-size: 1.2em;
     color: var(--wls-base-dark);
 }
+
+.tmd-color {
+    color: var(--wls-base-dark);
+}
+
 .tmd-emp1 {
     font-size: 1.2em;
     color: var(--wls-hint);
