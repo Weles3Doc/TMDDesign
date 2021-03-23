@@ -140,3 +140,8 @@
 .tmd-width {
     width: 340px;
 }
+
+.tmd-space {
+    /* border-left: 1px solid var(--wls-gray-dark); */
+    margin-right: .4em;
+}
